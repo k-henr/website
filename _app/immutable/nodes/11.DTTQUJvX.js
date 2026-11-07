@@ -5,14 +5,20 @@ import{A as e,H as t,M as n,U as r,g as i,j as a,m as o}from"../chunks/xifKf3q5.
             the customer. So if the central authority for .com domains (<a href="https://en.wikipedia.org/wiki/Verisign">Verisign</a>) decides to double the price for all .com domains, all the registrars
             would have to follow to stay alive. I'd assume that there would be some
             legal trouble for Verisign if they tried, but I prefer to interact with a
-            nonprofit either way.`,1),l=i(`<section><h1>Hosting solutions</h1> <p>At the time of writing, I host all my projects on Github Pages. This is nice
-        for stability and ease of use, but doesn't let me do dynamic pages. Since
-        SvelteKit supports dynamic websites as well and GHP can't distinguish between
-        the static and dynamic part I also have to do a weird prerender thing to get
-        it to work on GHP, which works fairly well but is annoying to set up.</p> <p>I'm planning to run my own home server at some point in the near future,
-        which would let me host dynamic websites without outsourcing to other
-        companies like Netlify or Vercel. Once I do, I'll probably also move this
-        website there in order to get rid of the prerendering step.</p></section> <section><h1>Typescript weirdness</h1> <p>Many of my "smaller", more focused projects are made in simple, static HTML.
+            nonprofit either way.`,1),l=i(`<section><h1>Hosting solutions</h1> <p>I host my static projects on Github Pages. This is nice for stability and
+        ease of use, but doesn't let me do dynamic apps. Since SvelteKit supports
+        dynamic websites as well and GHP can't distinguish between the static and
+        dynamic part I also have to do a weird prerender thing to get it to work on
+        GHP, which works fairly well but is annoying to set up.</p> <p>For dynamic apps, I have a server on a Raspberry Pi 4B running in my home.
+        More on that below.</p></section> <section><h1>Pi server</h1> <p>In order to host dynamic services, I wanted my own server. I had a Raspberry
+        Pi which I'd previously been using for small electronics experiments, but
+        which I now repurposed as a web server. This project started late summer
+        2026, and the first successful request to a dynamic app (<a href="/projects/lolcats">Lolcats</a>) was made sometime during october. So it actually didn't take too long to
+        set up, considering how busy I was with other things.</p> <p>I use Docker to separate different projects. Since I only have 4GB of RAM,
+        I'm considering removing that, but I do like the extra separation and the
+        fact that I can do all debugging on my computer in a graphical interface.</p> <p>I use Caddy as a reverse-proxy. Firefox kept refusing <code>auth-token</code> cookies over HTTP when debugging on my LAN, so I made my own self-signed certificate
+        to allow for (admittedly janky) LAN-friendly HTTPS. But "real" HTTPS is all handled
+        by Caddy which I'm very happy about.</p></section> <section><h1>Typescript weirdness</h1> <p>Many of my "smaller", more focused projects are made in simple, static HTML.
         I like not having a folder full of build files, and as long as I only need
         one page for the app static HTML is the easiest solution in my opinion. But I
         still want to use typescript rather than javascript, so what I've ended up
@@ -31,4 +37,4 @@ import{A as e,H as t,M as n,U as r,g as i,j as a,m as o}from"../chunks/xifKf3q5.
         eventually I landed on .se. There were a few reasons for that, but mainly I
         chose it because the organization that manages these is nicer than the .com
         one. They also have a maximum price for the domain, so while the "rent" on a
-        .com domain could theoretically rise arbitrarily high <!>, .se-domains have more bureaucratic protections.</p></section>`,1);function u(i){var u=l(),d=n(a(u),4),f=n(e(d),4);s(n(e(f)),{children:(e,n)=>{t();var r=c();t(2),o(e,r)},$$slots:{default:!0}}),t(),r(f),r(d),o(i,u)}export{u as component};
+        .com domain could theoretically rise arbitrarily high <!>, .se-domains have more bureaucratic protections.</p></section>`,1);function u(i){var u=l(),d=n(a(u),6),f=n(e(d),4);s(n(e(f)),{children:(e,n)=>{t();var r=c();t(2),o(e,r)},$$slots:{default:!0}}),t(),r(f),r(d),o(i,u)}export{u as component};
