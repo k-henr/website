@@ -10,6 +10,9 @@
         projects that have either been put here because I enjoyed making them, or
         because I enjoyed the result.
     </p>
+    <LinkWithIcon src="/icons/lolcats.svg" href="/projects/lolcats"
+        >Lolcats</LinkWithIcon
+    >
     <LinkWithIcon src="/icons/resourcecalc.svg" href="/projects/resourcecalc"
         >Resource Calculator</LinkWithIcon
     >

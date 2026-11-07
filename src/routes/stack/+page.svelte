@@ -5,17 +5,38 @@
 <section>
     <h1>Hosting solutions</h1>
     <p>
-        At the time of writing, I host all my projects on Github Pages. This is nice
-        for stability and ease of use, but doesn't let me do dynamic pages. Since
-        SvelteKit supports dynamic websites as well and GHP can't distinguish between
-        the static and dynamic part I also have to do a weird prerender thing to get
-        it to work on GHP, which works fairly well but is annoying to set up.
+        I host my static projects on Github Pages. This is nice for stability and
+        ease of use, but doesn't let me do dynamic apps. Since SvelteKit supports
+        dynamic websites as well and GHP can't distinguish between the static and
+        dynamic part I also have to do a weird prerender thing to get it to work on
+        GHP, which works fairly well but is annoying to set up.
     </p>
     <p>
-        I'm planning to run my own home server at some point in the near future,
-        which would let me host dynamic websites without outsourcing to other
-        companies like Netlify or Vercel. Once I do, I'll probably also move this
-        website there in order to get rid of the prerendering step.
+        For dynamic apps, I have a server on a Raspberry Pi 4B running in my home.
+        More on that below.
+    </p>
+</section>
+<section>
+    <h1>Pi server</h1>
+    <p>
+        In order to host dynamic services, I wanted my own server. I had a Raspberry
+        Pi which I'd previously been using for small electronics experiments, but
+        which I now repurposed as a web server. This project started late summer
+        2026, and the first successful request to a dynamic app (<a
+            href="/projects/lolcats">Lolcats</a
+        >) was made sometime during october. So it actually didn't take too long to
+        set up, considering how busy I was with other things.
+    </p>
+    <p>
+        I use Docker to separate different projects. Since I only have 4GB of RAM,
+        I'm considering removing that, but I do like the extra separation and the
+        fact that I can do all debugging on my computer in a graphical interface.
+    </p>
+    <p>
+        I use Caddy as a reverse-proxy. Firefox kept refusing <code>auth-token</code>
+        cookies over HTTP when debugging on my LAN, so I made my own self-signed certificate
+        to allow for (admittedly janky) LAN-friendly HTTPS. But "real" HTTPS is all handled
+        by Caddy which I'm very happy about.
     </p>
 </section>
 <section>

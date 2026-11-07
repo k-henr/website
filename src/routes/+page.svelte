@@ -35,10 +35,10 @@
     <p>Programming languages that I <del>like</del> <i>have used</i>:</p>
     <ul>
         <li>C#</li>
-        <li>Java (+Processing)</li>
-        <li>Static HTML/CSS/JS/TS</li>
         <li>Python</li>
-        <li>A little SvelteKit</li>
+        <li>Static HTML/CSS/JS/TS</li>
+        <li>SvelteKit</li>
+        <li>Java (+Processing)</li>
         <li>and a few more</li>
     </ul>
 </section>
