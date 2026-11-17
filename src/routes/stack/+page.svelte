@@ -25,7 +25,7 @@
         2026, and the first successful request to a dynamic app (<a
             href="/projects/lolcats">Lolcats</a
         >) was made sometime during october. So it actually didn't take too long to
-        set up, considering how busy I was with other things.
+        set up, considering how busy I was with other things at the time.
     </p>
     <p>
         I use Docker to separate different projects. Since I only have 4GB of RAM,
@@ -71,7 +71,7 @@
     <p>
         I thought for a bit about whether I wanted a .se or .com domain, but
         eventually I landed on .se. There were a few reasons for that, but mainly I
-        chose it because the organization that manages these is nicer than the .com
+        chose it because the organisation that manages these is nicer than the .com
         one. They also have a maximum price for the domain, so while the "rent" on a
         .com domain could theoretically rise arbitrarily high
         <Footnote

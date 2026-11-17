@@ -38,23 +38,42 @@
     </header>
     <div {@attach menuAttacher}>
         <nav>
-            <MenuItem name="Home" href="/" />
-            <MenuItem name="Projects" href="/projects">
-                <MenuItem name="Lolcats" href="/projects/lolcats" />
-                <MenuItem name="Resource Calculator" href="/projects/resourcecalc" />
+            <MenuItem onclick={toggleMenu} name="Home" href="/" />
+            <MenuItem onclick={toggleMenu} name="Projects" href="/projects">
                 <MenuItem
+                    onclick={toggleMenu}
+                    name="Lolcats"
+                    href="/projects/lolcats"
+                />
+                <MenuItem
+                    onclick={toggleMenu}
+                    name="Resource Calculator"
+                    href="/projects/resourcecalc"
+                />
+                <MenuItem
+                    onclick={toggleMenu}
                     name="The Ghost is your Friend"
                     href="/projects/ghostfriend"
                 />
                 <MenuItem
+                    onclick={toggleMenu}
                     name="Unhelpful calculator"
                     href="/projects/unhelpfulcalculator"
                 />
-                <MenuItem name="Tetris" href="/projects/desmostetris" />
-                <MenuItem name="3Desmos" href="/projects/3desmos" />
+                <MenuItem
+                    onclick={toggleMenu}
+                    name="Tetris"
+                    href="/projects/desmostetris"
+                />
+                <MenuItem
+                    onclick={toggleMenu}
+                    name="3Desmos"
+                    href="/projects/3desmos"
+                />
             </MenuItem>
-            <MenuItem name="AI statement" href="/ai"></MenuItem>
-            <MenuItem name="&quot;Stack&quot;" href="/stack"></MenuItem>
+            <MenuItem onclick={toggleMenu} name="AI statement" href="/ai"></MenuItem>
+            <MenuItem onclick={toggleMenu} name="&quot;Stack&quot;" href="/stack"
+            ></MenuItem>
         </nav>
         <small
             ><i>

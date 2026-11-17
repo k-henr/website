@@ -10,12 +10,14 @@
         children,
         href,
         name,
-    }: { children?: Snippet; href: string; name: string } = $props();
+        onclick,
+    }: { children?: Snippet; href: string; name: string; onclick: () => void } =
+        $props();
 </script>
 
 <div class="item">
     <section>
-        <a {href}>{name}</a>
+        <a {onclick} {href}>{name}</a>
         {#if children}
             <button aria-label="Open or close menu" onclick={toggle}
                 ><img
